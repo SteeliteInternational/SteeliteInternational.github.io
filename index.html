@@ -1,47 +1,9 @@
-<?php # Script 3.7 - dateform.php
-2
-3 $page_title = ‘Calendar Form’;
-
-5
-6 // This function makes three pull-down menus
-7 // for selecting a month, day, and year.
-8 function make_calendar_pulldowns() {
-9
-10 // Make the months array:
-11 $months = array (1 => ‘January’, ‘February’, ‘March’, ‘April’, ‘May’, ‘June’, ‘July’, ‘August’, ‘September’, ‘October’, ‘November’, ‘December’);
-12
-13 // Make the months pull-down menu:
-14 echo ‘<select name=”month”>’;
-15 foreach ($months as $key => $value) {
-16 echo “<option value=\”$key\”> $value</option>\n”;
-17 }
-18 echo ‘</select>’;
-19
-20 // Make the days pull-down menu:
-21 echo ‘<select name=”day”>’;
-22 for ($day = 1; $day <= 31; $day++) {
-23 echo “<option value=\”$day\”>$day </option>\n”;
-24 }
-25 echo ‘</select>’;
-26
-27 // Make the years pull-down menu:
-28 echo ‘<select name=”year”>’;
-29 for ($year = 2008; $year <= 2018; $year++) {
-
-30 echo “<option value=\”$year\”> $year</option>\n”;
-31 }
-32 echo ‘</select>’;
-33
-34 } // End of the function definition.
-35
-36 // Create the form tags:
-37 echo ‘<h1>Select a Date:</h1>
-38 <form action=”dateform.php” method= ”post”>’;
-39
-40 // Call the function.
-41 make_calendar_pulldowns();
-42
-43 echo ‘</form>’;
-44
-
-46 ?>
+1 <!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/ TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+2 <html xmlns=”http://www.w3.org/1999/ xhtml” xml:lang=”en” lang=”en”>
+3 <head>
+4 <meta http-equiv=”content-type” content= ”text/html; charset=iso-8859-1” />
+5 <title>Page Title</title>
+6 </head>
+7 <body>
+8 </body>
+9 </html>

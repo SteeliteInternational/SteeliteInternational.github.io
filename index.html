@@ -26,7 +26,16 @@ and open the template in the editor.
      
     </section>
     
-    
+      
+    <script>
+        Modernizr.load({
+    test: Modernizr.inputtypes.date,
+    nope: "js/jquery-ui.custom.js",
+    callback: function() {
+      $("input[type=date]").datepicker();
+    }
+  });
+  </script>
      
 <form id="gform" id="gform" enctype="text/plain" 
       action="https://docs.google.com/forms/d/e/1FAIpQLSe2RHWA00FdnU7w2SGBpDzmzWZkelPu4_KuBZfHsejIDxJXwQ/formResponse"

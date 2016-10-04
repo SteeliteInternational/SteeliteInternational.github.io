@@ -2,11 +2,13 @@
 <html>
 <body>
 
-<p>This example demonstrates how to assign an "onclick" event to a p element.</p>
+<p>This example uses the addEventListener() method to attach a "click" event to a p element.</p>
 
-<p id="demo" onclick="myFunction()">Click me.</p>
+<p id="demo">Click me.</p>
 
 <script>
+document.getElementById("demo").addEventListener("click", myFunction);
+
 function myFunction() {
     document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
 }

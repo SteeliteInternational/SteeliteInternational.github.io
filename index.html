@@ -5,12 +5,17 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js" language="javascript"></script>
 		<script type="text/javascript" src="./app.js" language="javascript"></script>
 	</head>
-	<body ng-app="MyTestApp">
-	<input type="text" id="datetime24" data-format="DD-MM-YYYY HH:mm" data-template="DD / MM / YYYY     HH : mm" name="datetime" value="21-12-2012 20:30">
+	<body>
+	      <div id='content'>Hello World</div>
+<input type='button' id='hideshow' value='hide/show'>
+		
 <script>
-$(function(){
-    $('#datetime24').combodate();  
+jQuery(document).ready(function(){
+    jQuery('#hideshow').live('click', function(event) {        
+         jQuery('#content').toggle('show');
+    });
 });
+	
 </script>
 		
 	</body>

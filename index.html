@@ -1,22 +1,19 @@
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>This is an angular test app</title>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js" language="javascript"></script>
-		<script type="text/javascript" src="./app.js" language="javascript"></script>
-	</head>
-	<body>
-	      <div id='content'>Hello World</div>
-<input type='button' id='hideshow' value='hide/show'>
-		
+<body>
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
 <script>
-jQuery(document).ready(function(){
-    jQuery('#hideshow').live('click', function(event) {        
-         jQuery('#content').toggle('show');
-    });
-});
-	
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
 </script>
-		
-	</body>
+
+</body>
 </html>
+

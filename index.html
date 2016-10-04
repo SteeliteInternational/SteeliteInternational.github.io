@@ -2,19 +2,19 @@
 <html>
 <body>
 
-<p>This example uses the addEventListener() method to attach a "click" event to a p element.</p>
+<p>Click "Try it" to execute the displayDate() function.</p>
 
-<p id="demo">Click me.</p>
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
 
 <script>
-document.getElementById("demo").addEventListener("click", myFunction);
+document.getElementById("myBtn").onclick = displayDate;
 
-function myFunction() {
-    document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
 }
 </script>
 
 </body>
 </html>
-
-
